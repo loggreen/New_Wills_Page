@@ -2,7 +2,7 @@ $(document).ready(function(){
     
      test();
 
-    // $.ajax();
+    $.ajax();
 
 });
 
