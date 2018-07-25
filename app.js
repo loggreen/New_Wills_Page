@@ -65,6 +65,30 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 });
 
+app.post ('/Leads', function (req,res){ 
+
+	var Name = req.body.Name;
+	var Phone = req.body.Phone;
+	var Email = req.body.Email;
+	var Message = req.body.Message;
+
+	pool.getConnection(function(err, connection){
+		var sqlquery = "INSERT INTO Leads (Name,Phone_Number,Email,Message) Values ("+Name+",'"+Phone_Number+"','"+Email+"',"+Message+")"
+		console.log(sqlquery);
+		connection.query(sqlquery, function (error, results, fields){
+			if (error) {
+				console.log("ERROR", error);
+			}
+			connection.release();
+			if(!err) {
+				res.send({"success":"true"});
+			}
+		});
+	});
+});
+
+
+
 var port = process.env.PORT || 3000
 
 app.listen(port, function() {console.log('Heyoooo!')})

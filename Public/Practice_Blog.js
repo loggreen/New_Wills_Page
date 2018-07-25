@@ -1,8 +1,10 @@
 $(document).ready(function(){
     
-     test();
+    test();
 
-   blog_pull();
+    blog_pull();
+
+    newLead();
 
 });
 
@@ -52,5 +54,35 @@ function blog_pull(){
     error: function(xhr, status, error) { console.log("ERROR: ", error)}
 
     });
+
+}
+
+function newLead(){
+
+    $('#form_button').click(function(){
+        console.log($('#name_input').val());
+        console.log($('#phone_input').val());
+        console.log($('#email_input').val());
+        console.log($('#message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#name_input').val(),
+            "Phone":$('#phone_input').val(),
+            "Email":$('#email_input').val(),
+            "Message":$('#message_input').val()
+
+        }
+
+        console.log(passJSON," from varpassJSON");
+        $.post("/Leads", passJSON ,function(data, status){
+            console.log(data);
+        });
+
+    })
+
+
+
+
 
 }
