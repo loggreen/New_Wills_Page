@@ -75,6 +75,8 @@ function newLead(){
         }
 
         console.log(passJSON," from varpassJSON");
+
+        console.log(passJSON.Name)
         $.post("/Leads", passJSON ,function(data, status){
             console.log(data);
         });
