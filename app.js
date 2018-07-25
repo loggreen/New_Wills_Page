@@ -65,7 +65,7 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 });
 
-app.post ('/Leads', function (req,res){ 
+app.post ("/Sunrise_Law_Group/Leads", function (req,res){ 
 
 	var Name = req.body.Name;
 	var Phone = req.body.Phone;
@@ -73,7 +73,7 @@ app.post ('/Leads', function (req,res){
 	var Message = req.body.Message;
 
 	pool.getConnection(function(err, connection){
-		var sqlquery = "INSERT INTO Leads (Name,Phone_Number,Email,Message) Values ("+Name+",'"+Phone_Number+"','"+Email+"',"+Message+")"
+		var sqlquery = "INSERT INTO Leads (Name, Phone_Number, Email, Message) Values ("Name","Phone","Email","Message")"
 		console.log(sqlquery);
 		connection.query(sqlquery, function (error, results, fields){
 			if (error) {

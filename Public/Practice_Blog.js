@@ -77,7 +77,7 @@ function newLead(){
         console.log(passJSON," from varpassJSON");
 
         console.log(passJSON.Name)
-        $.post("/Leads", passJSON ,function(data, status){
+        $.post("/Sunrise_Law_Group/Leads", passJSON ,function(data, status){
             console.log(data);
         });
 
