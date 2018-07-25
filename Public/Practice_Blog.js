@@ -2,7 +2,7 @@ $(document).ready(function(){
     
      test();
 
-    $.ajax();
+   blog_pull();
 
 });
 
@@ -12,6 +12,7 @@ function test(){
 
 }
 
+function blog_pull(){
     
     $.ajax({
     method: "GET",
@@ -51,4 +52,5 @@ function test(){
     error: function(xhr, status, error) { console.log("ERROR: ", error)}
 
     });
-    
+
+}
