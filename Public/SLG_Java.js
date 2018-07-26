@@ -1,12 +1,12 @@
-$(document).ready(function(){
+// $(document).ready(function(){
     
-     hideMenu();
+//      hideMenu();
 
-});
+// });
 
-function hideMenu(){
+// function hideMenu(){
 
-    $("#dropdown_exit").click(function(){
-        $(".dropdown-menu").hide()})
+//     $("#dropdown_exit").click(function(){
+//         $(".dropdown-menu").hide()})
     
- }
+//  }
