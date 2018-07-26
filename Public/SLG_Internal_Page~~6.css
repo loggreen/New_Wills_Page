@@ -139,6 +139,7 @@ a, u {
 
 .sidebar_title {
 	text-align: center;
+	margin-top: 18px;
 }
 
 .vlog {
@@ -181,26 +182,32 @@ a, u {
 .contact_form {
 	background-color: #00568b;
 	text-align: center;
+	height: 300px;
+    border: solid #9a999e 1px;
+    border-radius: 24px;
 }
 
 .form_box_header {
 	color: white;
-	margin-top: 8px;
+	margin-top: 14px;
+    margin-bottom: 15px;
 }
 
 #form_button {
 	display: block;
 	margin: auto;
 	margin-bottom: 10px;
-	background-color: #00568b;
+	background-color: white;
 	color: #9a999e;
 	height: 37px;
+	border: solid #9a999e 1px;
 }
 
 #form_button:hover {
 	background-color: #9a999e;
-	color: #00568b;
+	color: white;
 	text-decoration: none;
+	border: solid white 1px;
 }
 
 #form_button:focus {
@@ -208,9 +215,13 @@ a, u {
 }
 
 .input_box {
-	border: solid #0e4059 2px;
+	border: solid #9a999e 1px;
 	width: 80%;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.btn-primary {
+	border: none;
 }
 
 #hear_from_clients {

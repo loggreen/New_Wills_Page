@@ -7,6 +7,6 @@ $(document).ready(function(){
 function hideMenu(){
 
     $("#dropdown_exit").click(function(){
-        $(".dropdown-menu").hide()
-
- })}
+        $(".dropdown-menu").hide()})
+    
+ }

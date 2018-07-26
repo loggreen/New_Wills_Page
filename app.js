@@ -65,7 +65,7 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 });
 
-app.post ("/Sunrise_Law_Group/Leads", function (req,res){ 
+app.post ('/Sunrise_Law_Group/Leads', function (req,res){ 
 
 	var Name = req.body.Name;
 	var Phone = req.body.Phone;
