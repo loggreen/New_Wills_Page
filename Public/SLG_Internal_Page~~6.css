@@ -572,6 +572,10 @@ iframe {
 	text-align: center;
 }
 
+.form_box_header {
+	text-align: center;
+}
+
 #see_more_videos {
     width: 165px;
 }
