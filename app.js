@@ -56,29 +56,54 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 });
 
-app.post ('/Sunrise_Law_Group/leads', function (req,res){ 
+app.post('/Sunrise_Law_Group/leads', function(req,res){ 
 
-	console.log("made it to the app.post!")
+	pool.getConnection(function(err, connection) {
 
-	var Name = req.body.Name;
-	var Phone = req.body.Phone;
-	var Email = req.body.Email;
-	var Message = req.body.Message;
-
-	pool.getConnection(function(err, connection){
-		var sqlquery = "INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')"
-		console.log(sqlquery);
-		connection.query(sqlquery, function (error, results, fields){
-			if (error) {
-				console.log("ERROR", error);
-			}
+		console.log("the post is hit!")
+		
+		connection.query("INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')", function(error, result, field){
+			
 			connection.release();
+
 			if(!err) {
-				res.send({"success":"true"});
+
+				res.json(result);
+
 			}
+
+
 		});
+
 	});
+
+	
+
 });
+
+// app.post('/Sunrise_Law_Group/leads', function(req,res){ 
+
+// 	console.log("made it to the app.post!")
+
+// 	var Name = req.body.Name;
+// 	var Phone = req.body.Phone;
+// 	var Email = req.body.Email;
+// 	var Message = req.body.Message;
+
+// 	pool.getConnection(function(err, connection){
+// 		var sqlquery = "INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')"
+// 		console.log(sqlquery);
+// 		connection.query(sqlquery, function (error, results, fields){
+// 			if (error) {
+// 				console.log("ERROR", error);
+// 			}
+// 			connection.release();
+// 			if(!err) {
+// 				res.send({"success":"true"});
+// 			}
+// 		});
+// 	});
+// });
 
 
 
