@@ -1,20 +1,12 @@
 $(document).ready(function(){
     
-    test();
-
-    blog_pull();
+    sidebar_blog_pull();
 
     newLead();
 
 });
 
-function test(){
-
-    console.log("TEST");
-
-}
-
-function blog_pull(){
+function sidebar_blog_pull(){
     
     $.ajax({
     method: "GET",
@@ -80,14 +72,11 @@ function newLead(){
 
         
 
-        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+        $.post("/Sunrise_Law_Group/leads", passJSON, function(data, status){
             console.log(passJSON + "the post is working");
         });
 
     })
-
-
-
 
 
 }

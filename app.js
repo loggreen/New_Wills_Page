@@ -56,7 +56,7 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 });
 
-app.post('/Sunrise_Law_Group/leads', function(req,res){ 
+app.post("/Sunrise_Law_Group/leads", function(req,res){ 
 
 	pool.getConnection(function(err, connection) {
 
