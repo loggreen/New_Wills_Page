@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var mysql = require('mysql');
+var bodyParser = require('body-parser');
 
 var pool = mysql.createPool({
 	host : process.env.DB_HOST,
@@ -19,6 +20,9 @@ var path = require('path');
 
 app.use(express.static(__dirname + '/Public')); // set the static files location /public/img will be /img for users
 
+
+app.use(bodyParser.urlencoded({limit: '50mb',extended: true}));
+app.use(bodyParser.json({limit: '50mb'}));
 
 //Frontend route
 
@@ -56,42 +60,46 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 });
 
-app.post("/Sunrise_Law_Group/leads", function(req,res){ 
+// app.post("/Sunrise_Law_Group/leads", function(req,res){ 
 
-	pool.getConnection(function(err, connection) {
+// 	pool.getConnection(function(err, connection) {
 
-		console.log("the post is hit!")
+// 		console.log("the post is hit!")
 		
-		connection.query("INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')", function(error, result, field){
+// 		connection.query("INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')", function(error, result, field){
 			
-			connection.release();
+// 			connection.release();
 
-			if(!err) {
+// 			if(!err) {
 
-				res.json(result);
+// 				res.json(result);
 
-			}
+// 			}
 
 
-		});
+// 		});
 
-	});
+// 	});
 
 	
 
-});
+// });
 
 app.post('/Sunrise_Law_Group/leads', function(req,res){ 
 
 	console.log("made it to the app.post!")
+	console.log("BODY: ", req.body);
 
 	var Name = req.body.Name;
 	var Phone = req.body.Phone;
 	var Email = req.body.Email;
 	var Message = req.body.Message;
 
+	console.log("NAME: ", Name);
+
+
 	pool.getConnection(function(err, connection){
-		var sqlquery = "INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')"
+		var sqlquery = "INSERT INTO leads (Name, Phone_Number, Email, Message) VALUES ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')"
 		console.log(sqlquery);
 		connection.query(sqlquery, function (error, results, fields){
 			if (error) {

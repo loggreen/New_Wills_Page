@@ -18,9 +18,7 @@ function sidebar_blog_pull(){
     },
     
     success: function(data) {
-
-        console.log(data)        
-    
+            
             $('.recent_posts').append(
 
                 "<div class='vlog'><iframe class='video sidebar_video' height='202' src='" + data[0].Video_Code + "' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>"
@@ -39,7 +37,6 @@ function sidebar_blog_pull(){
                 + "<p class='post_preview' id='first_post_preview'>" + data[2].Text_Preview + "</p>"
               
             );
-
 
     },
 
