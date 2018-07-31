@@ -78,7 +78,7 @@ function newLead(){
 
         console.log(passJSON.Name)
         $.post('/Sunrise_Law_Group/leads', passJSON,function(data, status){
-            console.log(passJSON);
+            console.log(passJSON + "the post is working");
         });
 
     })
