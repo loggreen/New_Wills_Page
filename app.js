@@ -81,29 +81,29 @@ app.post('/Sunrise_Law_Group/leads', function(req,res){
 
 });
 
-// app.post('/Sunrise_Law_Group/leads', function(req,res){ 
+app.post('/Sunrise_Law_Group/leads', function(req,res){ 
 
-// 	console.log("made it to the app.post!")
+	console.log("made it to the app.post!")
 
-// 	var Name = req.body.Name;
-// 	var Phone = req.body.Phone;
-// 	var Email = req.body.Email;
-// 	var Message = req.body.Message;
+	var Name = req.body.Name;
+	var Phone = req.body.Phone;
+	var Email = req.body.Email;
+	var Message = req.body.Message;
 
-// 	pool.getConnection(function(err, connection){
-// 		var sqlquery = "INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')"
-// 		console.log(sqlquery);
-// 		connection.query(sqlquery, function (error, results, fields){
-// 			if (error) {
-// 				console.log("ERROR", error);
-// 			}
-// 			connection.release();
-// 			if(!err) {
-// 				res.send({"success":"true"});
-// 			}
-// 		});
-// 	});
-// });
+	pool.getConnection(function(err, connection){
+		var sqlquery = "INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')"
+		console.log(sqlquery);
+		connection.query(sqlquery, function (error, results, fields){
+			if (error) {
+				console.log("ERROR", error);
+			}
+			connection.release();
+			if(!err) {
+				res.send({"success":"true"});
+			}
+		});
+	});
+});
 
 
 
