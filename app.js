@@ -28,15 +28,6 @@ app.get('/', function(req, res) {
  
  })
 
-app.get('/profs', function(req, res) {
-
-   res.sendFile(path.resolve('Public/prof-table.html'));
- 
- })
-
-///////////////////////////////////////////////////////
-
-
 
 app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
