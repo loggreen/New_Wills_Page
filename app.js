@@ -58,6 +58,8 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 app.post ('/Sunrise_Law_Group/leads', function (req,res){ 
 
+	console.log("made it to the app.post!")
+
 	var Name = req.body.Name;
 	var Phone = req.body.Phone;
 	var Email = req.body.Email;
