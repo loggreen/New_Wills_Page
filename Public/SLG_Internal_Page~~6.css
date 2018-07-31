@@ -193,7 +193,7 @@ a, u {
     margin-bottom: 15px;
 }
 
-#form_button {
+.form_button {
 	display: block;
 	margin: auto;
 	margin-bottom: 10px;
@@ -203,14 +203,14 @@ a, u {
 	border: solid #9a999e 1px;
 }
 
-#form_button:hover {
+.form_button:hover {
 	background-color: #9a999e;
 	color: white;
 	text-decoration: none;
 	border: solid white 1px;
 }
 
-#form_button:focus {
+.form_button:focus {
 	outline: 0;
 }
 
