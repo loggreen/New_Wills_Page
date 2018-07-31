@@ -4,6 +4,8 @@ $(document).ready(function(){
 
     newLead();
 
+    bottomnewLead();
+
 });
 
 function sidebar_blog_pull(){
@@ -48,7 +50,7 @@ function sidebar_blog_pull(){
 
 function newLead(){
 
-    $('.form_button').click(function(){
+    $('#first_button').click(function(){
         console.log($('#name_input').val());
         console.log($('#phone_input').val());
         console.log($('#email_input').val());
@@ -60,6 +62,38 @@ function newLead(){
             "Phone":$('#phone_input').val(),
             "Email":$('#email_input').val(),
             "Message":$('#message_input').val()
+
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
+function bottomnewLead(){
+
+    $('#bottom_button').click(function(){
+        console.log($('#bottom_name_input').val());
+        console.log($('#bottom_phone_input').val());
+        console.log($('#bottom_email_input').val());
+        console.log($('#bottom_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#bottom_name_input').val(),
+            "Phone":$('#bottom_phone_input').val(),
+            "Email":$('#bottom_email_input').val(),
+            "Message":$('#bottom_message_input').val()
 
         }
 
