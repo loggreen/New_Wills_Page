@@ -48,7 +48,7 @@ function sidebar_blog_pull(){
 
 function newLead(){
 
-    $('#form_button').click(function(){
+    $('.form_button').click(function(){
         console.log($('#name_input').val());
         console.log($('#phone_input').val());
         console.log($('#email_input').val());
