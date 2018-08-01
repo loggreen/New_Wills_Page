@@ -60,6 +60,33 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 });
 
+app.get('/Full_Blog_Pull/Blogs', function(req,res){
+
+	console.log("working")
+
+	pool.getConnection(function(err, connection) {
+
+		console.log(err)
+		
+		connection.query('SELECT * FROM Blogs ORDER BY BlogID DESC LIMIT 5', function(error, result, field){
+			
+			connection.release();
+
+			if(!err) {
+
+				res.json(result);
+
+			}
+
+		//res.send(result)
+
+		});
+
+	});
+
+
+});
+
 // app.post("/Sunrise_Law_Group/leads", function(req,res){ 
 
 // 	pool.getConnection(function(err, connection) {

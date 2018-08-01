@@ -6,6 +6,8 @@ $(document).ready(function(){
 
     bottomnewLead();
 
+    full_blog_pull();
+
 });
 
 function sidebar_blog_pull(){
@@ -109,5 +111,57 @@ function bottomnewLead(){
 
     })
 
+
+}
+
+function full_blog_pull(){
+    
+    $.ajax({
+    method: "GET",
+    url: "/Full_Blog_Pull/Blogs",
+    dataType: 'json',
+    headers: {
+        'Content-Type':'application/json',
+        'Access-Control-Allow-Headers':'*'
+    },
+    
+    success: function(data) {
+            
+            $('.full_blog_pull').append(
+
+                "<iframe class='main_blog_video' width='756' height='426' src='" + data[0].Video_Code +  "'' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>"
+                + "<h6 class='author_runtime'>" + data[0].Run_Time + "</h6>"
+                + "<h1 class='full_blog_headline'>" + data[0].Headline + "</h1>"
+                + "<h4 class='full_blog_text'>" + data[0].Text_Preview + "</h4>"
+
+                + "<iframe class='main_blog_video' width='756' height='426' src='" + data[1].Video_Code +  "'' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>"
+                + "<h6 class='author_runtime'>" + data[1].Run_Time + "</h6>"
+                + "<h1 class='full_blog_headline'>" + data[1].Headline + "</h1>"
+                + "<h4 class='full_blog_text'>" + data[1].Text_Preview + "</h4>"
+
+                + "<iframe class='main_blog_video' width='756' height='426' src='" + data[2].Video_Code +  "'' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>"
+                + "<h6 class='author_runtime'>" + data[2].Run_Time + "</h6>"
+                + "<h1 class='full_blog_headline'>" + data[2].Headline + "</h1>"
+                + "<h4 class='full_blog_text'>" + data[2].Text_Preview + "</h4>"
+
+                + "<iframe class='main_blog_video' width='756' height='426' src='" + data[3].Video_Code +  "'' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>"
+                + "<h6 class='author_runtime'>" + data[3].Run_Time + "</h6>"
+                + "<h1 class='full_blog_headline'>" + data[3].Headline + "</h1>"
+                + "<h4 class='full_blog_text'>" + data[3].Text_Preview + "</h4>"
+
+                + "<iframe class='main_blog_video' width='756' height='426' src='" + data[4].Video_Code +  "'' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>"
+                + "<h6 class='author_runtime'>" + data[4].Run_Time + "</h6>"
+                + "<h1 class='full_blog_headline'>" + data[4].Headline + "</h1>"
+                + "<h4 class='full_blog_text'>" + data[4].Text_Preview + "</h4>"
+                
+               
+              
+            );
+
+    },
+
+    error: function(xhr, status, error) { console.log("ERROR: ", error)}
+
+    });
 
 }

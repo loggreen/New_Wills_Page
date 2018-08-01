@@ -456,6 +456,26 @@ a, u {
     background-color: #3e8e41;
 }
 
+.full_blog_pull {
+	text-align: center;
+	padding-top: 100px;	
+}
+
+.main_blog_video {
+	margin: auto;
+}
+
+.full_blog_headline {
+	font-style: normal;
+	margin-top: 25px;
+}
+
+.full_blog_text {
+	text-align: justify;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
 @media only screen and (max-width: 768px) {
 
 .navbar {
