@@ -28,7 +28,7 @@ app.use(bodyParser.json({limit: '50mb'}));
 
 app.get('/', function(req, res) {
 
-   res.sendFile(path.resolve('Public/Wills_Page.html'));
+   res.sendFile(path.resolve('index.html'));
  
  })
 
