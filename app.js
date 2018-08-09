@@ -28,9 +28,9 @@ app.use(bodyParser.json({limit: '50mb'}));
 
 app.get('/', function(req, res) {
 
-	console.log(path.resolve('index.html'))
+	console.log(path.resolve('/Public/index.html'))
 
-   res.sendFile(path.resolve('index.html'));
+   res.sendFile(path.resolve('/Public/index.html'));
  
  })
 
