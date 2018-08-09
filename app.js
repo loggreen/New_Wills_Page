@@ -18,7 +18,7 @@ console.log(process.env.DB_DATABASE)
 
 var path = require('path');
 
-app.use(express.static(__dirname + '/Public')); // set the static files location /public/img will be /img for users
+app.use(express.static(__dirname + 'Public')); // set the static files location /public/img will be /img for users
 
 
 app.use(bodyParser.urlencoded({limit: '50mb',extended: true}));
@@ -28,9 +28,9 @@ app.use(bodyParser.json({limit: '50mb'}));
 
 app.get('/', function(req, res) {
 
-	console.log(path.resolve('Public/index.html'))
+	console.log(path.resolve('index.html'))
 
-   res.sendFile(path.resolve('Public/index.html'));
+   res.sendFile(path.resolve('index.html'));
  
  })
 
