@@ -2,9 +2,25 @@ $(document).ready(function(){
     
     sidebar_blog_pull();
 
-    newLead();
+    Wills_New_Lead();
 
-    bottomnewLead();
+    Wills_Bottom_New_Lead();
+
+    Wills_Body_New_Lead();
+
+    Wills_Body_Second_New_Lead();
+
+    Wills_Body_Third_New_Lead();
+
+    POA_New_Lead();
+
+    POA_Bottom_New_Lead();
+
+    POA_Body_New_Lead();
+
+    POA_Body_Second_New_Lead();
+
+    POA_Body_Third_New_Lead();
 
 });
 
@@ -48,7 +64,7 @@ function sidebar_blog_pull(){
 
 }
 
-function newLead(){
+function Wills_New_Lead(){
 
     $('#first_button').click(function(){
         console.log($('#name_input').val());
@@ -80,7 +96,7 @@ function newLead(){
 
 }
 
-function bottomnewLead(){
+function Wills_Bottom_New_Lead(){
 
     $('#bottom_button').click(function(){
         console.log($('#bottom_name_input').val());
@@ -111,4 +127,258 @@ function bottomnewLead(){
 
 
 }
+
+function Wills_Body_New_Lead(){
+
+    $('#first_wills_main_button').click(function(){
+        console.log($('#wills_body_name_input').val());
+        console.log($('#wills_body_phone_input').val());
+        console.log($('#wills_body_input').val());
+        console.log($('#wills_body_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#wills_body_name_input').val(),
+            "Phone":$('#wills_body_phone_input').val(),
+            "Email":$('#wills_body_email_input').val(),
+            "Message":$('#wills_body_message_input').val()
+
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
+function Wills_Body_Second_New_Lead(){
+
+    $('#second_wills_main_button').click(function(){
+        console.log($('#wills_body_second_name_input').val());
+        console.log($('#wills_body_second_phone_input').val());
+        console.log($('#wills_body_second_input').val());
+        console.log($('#wills_body_second_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#wills_body_second_name_input').val(),
+            "Phone":$('#wills_body_second_phone_input').val(),
+            "Email":$('#wills_body_second_email_input').val(),
+            "Message":$('#wills_body_second_message_input').val()
+
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
+function Wills_Body_Third_New_Lead(){
+
+    $('#third_wills_main_button').click(function(){
+        console.log($('#wills_body_third_name_input').val());
+        console.log($('#wills_body_third_phone_input').val());
+        console.log($('#wills_body_third_input').val());
+        console.log($('#wills_body_third_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#wills_body_third_name_input').val(),
+            "Phone":$('#wills_body_third_phone_input').val(),
+            "Email":$('#wills_body_third_email_input').val(),
+            "Message":$('#wills_body_third_message_input').val()
+
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
+function POA_New_Lead(){
+
+    $('#top_POA_button').click(function(){
+        console.log($('#POA_name_input').val());
+        console.log($('#POA_phone_input').val());
+        console.log($('#POA_email_input').val());
+        console.log($('#POA_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#POA_name_input').val(),
+            "Phone":$('#POA_phone_input').val(),
+            "Email":$('#POA_email_input').val(),
+            "Message":$('#POA_message_input').val()
+
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
+function POA_Bottom_New_Lead(){
+
+    $('#bottom_POA_button').click(function(){
+        console.log($('#bottom_POA_name_input').val());
+        console.log($('#bottom_POA_phone_input').val());
+        console.log($('#bottom_POA_email_input').val());
+        console.log($('#bottom_POA_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#bottom_POA_name_input').val(),
+            "Phone":$('#bottom_POA-phone_input').val(),
+            "Email":$('#bottom_POA_email_input').val(),
+            "Message":$('#bottom_POA_message_input').val()
+
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
+function POA_Body_New_Lead(){
+
+    $('#first_main_POA_button').click(function(){
+        console.log($('#POA_body_name_input').val());
+        console.log($('#POA_body_phone_input').val());
+        console.log($('#POA_body_email_input').val());
+        console.log($('#POA_body_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#POA_body_name_input').val(),
+            "Phone":$('#POA_body_phone_input').val(),
+            "Email":$('#POA_body_email_input').val(),
+            "Message":$('#POA_body_message_input').val()
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
+function POA_Body_Second_New_Lead(){
+
+    $('#second_main_POA_button').click(function(){
+        console.log($('#second_POA_body_name_input').val());
+        console.log($('#second_POA_body_phone_input').val());
+        console.log($('#second_POA_body_email_input').val());
+        console.log($('#second_POA_body_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#second_POA_body_name_input').val(),
+            "Phone":$('#second_POA_body_phone_input').val(),
+            "Email":$('#second_POA_body_email_input').val(),
+            "Message":$('#second_POA_body_message_input').val()
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
+function POA_Body_Third_New_Lead(){
+
+    $('#second_main_POA_button').click(function(){
+        console.log($('#third_POA_body_name_input').val());
+        console.log($('#third_POA_body_phone_input').val());
+        console.log($('#third_POA_body_email_input').val());
+        console.log($('#third_POA_body_message_input').val());
+        
+
+        var passJSON = {         
+            "Name":$('#third_POA_body_name_input').val(),
+            "Phone":$('#third_POA_body_phone_input').val(),
+            "Email":$('#third_POA_body_email_input').val(),
+            "Message":$('#third_POA_body_message_input').val()
+        }
+
+        console.log(passJSON);
+
+        console.log(passJSON.Name);
+
+        
+
+        $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
+            console.log("the post is working");
+        });
+
+    })
+
+
+}
+
 
