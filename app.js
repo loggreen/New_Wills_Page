@@ -89,30 +89,6 @@ app.get('/Full_Blog_Pull/Blogs', function(req,res){
 
 });
 
-// app.post("/Sunrise_Law_Group/leads", function(req,res){ 
-
-// 	pool.getConnection(function(err, connection) {
-
-// 		console.log("the post is hit!")
-		
-// 		connection.query("INSERT INTO leads (Name, Phone_Number, Email, Message) Values ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')", function(error, result, field){
-			
-// 			connection.release();
-
-// 			if(!err) {
-
-// 				res.json(result);
-
-// 			}
-
-
-// 		});
-
-// 	});
-
-	
-
-// });
 
 app.post('/Sunrise_Law_Group/leads', function(req,res){ 
 
