@@ -195,19 +195,19 @@ app.post('/Sunrise_Law_Group/leads', function(req,res){
 	console.log("NAME: ", Name);
 
 
-	// pool.getConnection(function(err, connection){
-	// 	var sqlquery = "INSERT INTO leads (Name, Phone_Number, Email, Message) VALUES ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')"
-	// 	console.log(sqlquery);
-	// 	connection.query(sqlquery, function (error, results, fields){
-	// 		if (error) {
-	// 			console.log("ERROR", error);
-	// 		}
-	// 		connection.release();
-	// 		if(!err) {
-	// 			res.send({"success":"true"});
-	// 		}
-	// 	});
-	// });
+	pool.getConnection(function(err, connection){
+		var sqlquery = "INSERT INTO leads (Name, Phone_Number, Email, Message) VALUES ('"+Name+"','"+Phone+"','"+Email+"','"+Message+"')"
+		console.log(sqlquery);
+		connection.query(sqlquery, function (error, results, fields){
+			if (error) {
+				console.log("ERROR", error);
+			}
+			connection.release();
+			if(!err) {
+				res.send({"success":"true"});
+			}
+		});
+	});
 });
 
 
