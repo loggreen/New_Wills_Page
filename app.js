@@ -213,7 +213,7 @@ app.post('/Sunrise_Law_Group/leads', function(req,res){
 
 function getHTML(file){
 	var html = fs.readFileSync(path.resolve('Public/' + file), 'utf8');
-	var nav = fs.readFileSync(path.resolve('./nav.html'), 'utf8');
+	var nav = fs.readFileSync(path.resolve('Public/nav.html'), 'utf8');
 
 	return html.replace('{% nav %}', nav);
 }
