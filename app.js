@@ -21,8 +21,7 @@ console.log(process.env.DB_DATABASE)
 
 var path = require('path');
 
-app.use(express.static(__dirname + '/Public')); // set the static files location /public/img will be /img for users
-
+app.use(express.static(__dirname + '/Public', { index : false })); // set the static files location /public/img will be /img for users
 
 app.use(bodyParser.urlencoded({limit: '50mb',extended: true}));
 app.use(bodyParser.json({limit: '50mb'}));
@@ -30,7 +29,7 @@ app.use(bodyParser.json({limit: '50mb'}));
 //Frontend route
 
 app.get('/', function(req, res) {
-
+console.log('getting index');
 	console.log(path.resolve('Public/index.html'))
 
    res.send(getHTML('index.html'));
@@ -85,21 +84,21 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 	pool.getConnection(function(err, connection) {
 
 		console.log(err)
-		
-		connection.query('SELECT * FROM Blogs ORDER BY BlogID DESC LIMIT 3', function(error, result, field){
-			
-			connection.release();
+		if(connection){
+			connection.query('SELECT * FROM Blogs ORDER BY BlogID DESC LIMIT 3', function(error, result, field){
+				
+				connection.release();
 
-			if(!err) {
+				if(!err) {
 
-				res.json(result);
+					res.json(result);
 
-			}
+				}
 
-		//res.send(result)
+			//res.send(result)
 
-		});
-
+			});
+		}
 	});
 
 
@@ -213,9 +212,10 @@ app.post('/Sunrise_Law_Group/leads', function(req,res){
 
 function getHTML(file){
 	var html = fs.readFileSync(path.resolve('Public/' + file), 'utf8');
-	var nav = fs.readFileSync(path.resolve('Public/nav.html'), 'utf8');
+	var nav = fs.readFileSync(path.resolve('nav.html'), 'utf8');
+	console.log(nav);
 
-	return html.replace('{% nav %}', nav);
+	return html.replace(/\{\% nav \%\}/gi, nav);
 }
 
 
