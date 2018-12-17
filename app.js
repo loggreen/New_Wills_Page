@@ -148,10 +148,10 @@ app.post('/Sunrise_Law_Group/leads', function(req,res){
 	      {
 	        to: [
 	          {
-	            email: 'YOUR_EMAIL_GOES_HERE',
+	            email: 'logan@sunriselawgroup.com',
 	          },
 	          {
-	            email: 'YOUR_OTHER_EMAIL_GOES_HERE',
+	            email: 'zack@sunriselawgroup.com',
 	          },
 	        ],
 	        subject: 'New Lead from Website',
