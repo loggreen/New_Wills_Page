@@ -375,6 +375,22 @@ a, u {
     height: 54px;
 }
 
+.succession_tip_box {
+		background-color: #00568b;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   	width: 700px;
+    height: 54px;
+}
+
+#succession_process {
+	height: 70px;
+}
+
 #mini_content {
 	color: white;
 }
