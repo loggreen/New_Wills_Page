@@ -323,6 +323,13 @@ a, u {
 	margin-top: 50px;
 }
 
+.infographic {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 65%;
+}
+
 .contact_box_container {
 	text-align: center;
 }
