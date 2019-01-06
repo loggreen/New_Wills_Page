@@ -330,6 +330,12 @@ a, u {
   	width: 65%;
 }
 
+.contact_us_box{
+	width: 50%;
+    margin: auto;
+    padding-top: 100px;
+}
+
 .contact_box_container {
 	text-align: center;
 }
