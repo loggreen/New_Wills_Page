@@ -330,13 +330,16 @@ a, u {
   	width: 65%;
 }
 
-.contact_us_box{
+#contact_us_box{
 	width: 50%;
     margin: auto;
-    padding-top: 100px;
 }
 
 .contact_box_container {
+	text-align: center;
+}
+
+.contact_us_text {
 	text-align: center;
 }
 
@@ -550,6 +553,10 @@ a, u {
 	text-align: justify;
 	padding-left: 300px;
 	padding-right: 300px;
+}
+
+.contact_column {
+	padding-top: 24px;
 }
 
 @media only screen and (max-width: 768px) {
