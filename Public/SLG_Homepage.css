@@ -307,6 +307,14 @@ a, u {
 	padding-right: 10px;
 }
 
+.bio_video {
+	zoom: 65%;
+}
+
+.attorney_bio {
+	text-align: justify;
+}
+
 
 #footer_firm_name {
 	text-align: center;
