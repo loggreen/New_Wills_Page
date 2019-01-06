@@ -313,6 +313,8 @@ a, u {
 
 .attorney_bio {
 	text-align: justify;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 
