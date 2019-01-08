@@ -330,3 +330,11 @@ a, u {
     height: 54px;
 }
 
+.hero_text {
+	color: white;
+    opacity: .9;
+    font-size: 46px;
+    padding-top: 22%;
+    text-align: center;
+}
+
