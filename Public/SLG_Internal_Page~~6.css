@@ -563,6 +563,13 @@ a, u {
 	padding-top: 30px;
 }
 
+#event_flyer {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
 @media only screen and (max-width: 768px) {
 
 .main_contact_form {
