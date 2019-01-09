@@ -264,7 +264,18 @@ a, u {
     background-color: #3e8e41;
 }
 
+#event_flyer {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
 @media only screen and (max-width: 768px) {
+
+#event_flyer {
+width: 98%;
+}
 
 .navbar {
 	height: 100px;
