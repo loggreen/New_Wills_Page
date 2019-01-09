@@ -572,6 +572,11 @@ a, u {
 
 @media only screen and (max-width: 768px) {
 
+
+#event_flyer {
+	width: 98%;
+}
+
 .main_contact_form {
 	display: block;
 }
