@@ -347,5 +347,14 @@ width: 98%;
     font-size: 46px;
     padding-top: 22%;
     text-align: center;
+    display: none;
+}
+
+.hero_box {
+	background-size: contain;
+}
+
+.new_approach {
+	margin-top: -75px;
 }
 
