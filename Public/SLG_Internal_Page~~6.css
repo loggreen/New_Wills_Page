@@ -305,6 +305,15 @@ a, u {
 	height: 300px;
 }
 
+.wills_hero_box {
+	background-image: url(Wills_Photo.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 300px;	
+}
+
 .hero_text {
 	color: white;
     opacity: .9;
