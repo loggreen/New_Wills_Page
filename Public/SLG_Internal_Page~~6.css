@@ -636,8 +636,15 @@ a, u {
 }
 
 #generally_box {
-	width: 350px;
+	width: 369px;
 	height: 115px;
+    padding-bottom: 0px;
+    padding-right: 6px;
+}
+
+#general_POA_box {
+	width: 369px;
+    height: 98px;
     padding-bottom: 0px;
     padding-right: 6px;
 }
