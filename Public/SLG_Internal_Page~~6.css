@@ -649,6 +649,13 @@ a, u {
     padding-right: 6px;
 }
 
+#duration_POA_box {
+	width: 369px;
+    height: 81px;
+    padding-bottom: 0px;
+    padding-right: 6px;
+}
+
 iframe {
 	width: 100%;
 }
