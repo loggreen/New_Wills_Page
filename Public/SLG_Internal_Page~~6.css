@@ -399,7 +399,7 @@ a, u {
     padding-left: 7px;
     margin-top: 25px;
     margin-bottom: 25px;
-   	width: 364px;
+   	width: 700px;
     height: 54px;
 }
 
@@ -734,10 +734,11 @@ iframe {
 
 #succession_process {
 	height: 117px;
+	width: 363px;
 }
 
 #mini_content {
-	width: 343px;
+	width: 349px;
 }
 
 
