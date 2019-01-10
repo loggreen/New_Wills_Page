@@ -570,6 +570,34 @@ a, u {
     width: 85%;
 }
 
+#general_POA_box {
+	width: 369px;
+    height: 98px;
+    padding-bottom: 0px;
+    padding-right: 6px;
+    background-color: #00568b;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#duration_POA_box {
+	width: 369px;
+    height: 81px;
+    padding-bottom: 0px;
+    padding-right: 6px;
+    background-color: #00568b;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 @media only screen and (max-width: 768px) {
 
 
@@ -647,6 +675,13 @@ a, u {
     height: 98px;
     padding-bottom: 0px;
     padding-right: 6px;
+    background-color: #00568b;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #duration_POA_box {
@@ -654,6 +689,13 @@ a, u {
     height: 81px;
     padding-bottom: 0px;
     padding-right: 6px;
+    background-color: #00568b;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 iframe {
