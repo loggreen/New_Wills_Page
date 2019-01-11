@@ -85,7 +85,7 @@ app.get('/Practice_Blog_Table/Blogs', function(req,res){
 
 		console.log(err)
 		if(connection){
-			connection.query('SELECT * FROM Blogs ORDER BY BlogID DESC LIMIT 3', function(error, result, field){
+			connection.query('SELECT * FROM final_blogs ORDER BY BlogID DESC LIMIT 3', function(error, result, field){
 				
 				connection.release();
 
