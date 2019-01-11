@@ -28,7 +28,7 @@ function sidebar_blog_pull(){
     
     $.ajax({
     method: "GET",
-    url: "/Practice_Blog_Table/Blogs",
+    url: "/Practice_Blog_Table/final_blogs",
     dataType: 'json',
     headers: {
         'Content-Type':'application/json',
