@@ -161,12 +161,17 @@ a, u {
 }
 
 .post_title {
+	font-size: 22px;
+	text-align: justify;
+}
+
+.video_run_time {
 	font-size: 12px;
 	text-align: justify;
 }
 
 .post_preview {
-	font-size: 10px;
+	font-size: 14px;
 	text-align: justify;
 }
 
@@ -825,6 +830,18 @@ iframe {
 
 #mini_content {
 	width: 349px;
+}
+
+.post_title {
+	text-align: center;
+}
+
+.video_run_time {
+	text-align: center;
+}
+
+.post_preview {
+	text-align: center;
 }
 
 
