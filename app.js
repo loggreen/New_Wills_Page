@@ -85,7 +85,7 @@ app.get('/Practice_Blog_Table/final_blogs', function(req,res){
 
 		console.log(err)
 		if(connection){
-			connection.query('SELECT * FROM final_blogs ORDER BY BlogID DESC LIMIT 3', function(error, result, field){
+			connection.query('SELECT * FROM final_blogs ORDER BY Blog_ID DESC LIMIT 3', function(error, result, field){
 				
 				connection.release();
 
@@ -112,7 +112,7 @@ app.get('/Full_Blog_Pull/Blogs', function(req,res){
 
 		console.log(err)
 		
-		connection.query('SELECT * FROM Blogs ORDER BY BlogID DESC LIMIT 5', function(error, result, field){
+		connection.query('SELECT * FROM Blogs ORDER BY Blog_ID DESC LIMIT 5', function(error, result, field){
 			
 			connection.release();
 
