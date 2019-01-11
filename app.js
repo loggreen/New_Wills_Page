@@ -77,7 +77,7 @@ app.get('/practice-areas/power-of-attorney', function(req, res) {
 });
 
 
-app.get('/Practice_Blog_Table/Blogs', function(req,res){
+app.get('/Practice_Blog_Table/final_blogs', function(req,res){
 
 	console.log("working")
 
