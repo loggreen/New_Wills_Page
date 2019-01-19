@@ -135,7 +135,7 @@ app.get('/blogs/:start/:count', function(req,res){
 
 				}
 
-			//res.send(result)
+			res.send(result)
 
 			});
 		}
