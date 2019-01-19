@@ -60,6 +60,10 @@ app.get('/videos', function(req, res) {
 	res.send(getHTML('Videos.html'))
 });
 
+app.get('/blog', function(req, res) {
+	res.send(getHTML('blog.html'))
+});
+
 app.get('/thank-you', function(req, res) {
 	res.send(getHTML('Thank_You.html'))
 });
@@ -91,6 +95,37 @@ app.get('/Practice_Blog_Table/final_blogs', function(req,res){
 		console.log(err)
 		if(connection){
 			connection.query('SELECT * FROM final_blogs ORDER BY Blog_ID DESC LIMIT 3', function(error, result, field){
+				
+				connection.release();
+
+				if(!err) {
+
+					res.json(result);
+
+				}
+
+			//res.send(result)
+
+			});
+		}
+	});
+
+
+});
+
+
+app.get('/blogs/:start/:count', function(req,res){
+
+	var start = req.params.start;
+	var count = req.params.count;
+
+	console.log("working")
+
+	pool.getConnection(function(err, connection) {
+
+		console.log(err)
+		if(connection){
+			connection.query('SELECT * FROM final_blogs ORDER BY Blog_ID DESC OFFSET ' + start + ' ROWS FETCH NEXT ' + count + ' ROWS ONLY', function(error, result, field){
 				
 				connection.release();
 
