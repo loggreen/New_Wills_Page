@@ -89,6 +89,8 @@ function Wills_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+            
         });
 
     })
@@ -121,6 +123,7 @@ function Wills_Bottom_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
         });
 
     })
@@ -153,6 +156,8 @@ function Wills_Body_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+
         });
 
     })
@@ -185,6 +190,8 @@ function Wills_Body_Second_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+
         });
 
     })
@@ -217,6 +224,8 @@ function Wills_Body_Third_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+
         });
 
     })
@@ -249,6 +258,8 @@ function POA_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+
         });
 
     })
@@ -281,6 +292,8 @@ function POA_Bottom_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+
         });
 
     })
@@ -312,6 +325,8 @@ function POA_Body_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+
         });
 
     })
@@ -343,6 +358,8 @@ function POA_Body_Second_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+
         });
 
     })
@@ -374,6 +391,8 @@ function POA_Body_Third_New_Lead(){
 
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
+            window.location.href = '/thank-you';
+
         });
 
     })
