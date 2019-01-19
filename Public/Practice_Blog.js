@@ -24,6 +24,30 @@ $(document).ready(function(){
 
 });
 
+function get_blogs(start){
+    var start = start || 1;
+
+    $.ajax({
+        method: 'GET',
+        url: '/blogs/' + start + '/10',
+        dataType: 'json',
+        headers: {
+            'Content-Type':'application/json',
+            'Access-Control-Allow-Headers':'*'
+        },
+        success: function(data){
+            for(var i = 0; i < data.length; i++){
+                $('#blog-wrapper').append(
+                    "<div class='vlog'><iframe class='video' height='202' src='" + data[d].Video_Code + "' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>"
+                    + "<h6 class='post_title' id='first_post_title'>" + data[d].Headline + "</h6>"
+                    + "<h6 class='video_run_time' id='first_video_run_time'>" + data[d].Post_Date + " (Length: " + data[d].Run_Time + ")</h6>"
+                    + "<p class='post_preview' id='first_post_preview'>" + data[d].Full_Text + "</p>"
+                );
+            }
+        }
+    })
+}
+
 function sidebar_blog_pull(){
     
     $.ajax({
@@ -90,7 +114,7 @@ function Wills_New_Lead(){
         $.post('/Sunrise_Law_Group/leads', passJSON, function(data, status){
             console.log("the post is working");
             window.location.href = '/thank-you';
-            
+
         });
 
     })
