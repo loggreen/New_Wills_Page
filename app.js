@@ -57,7 +57,7 @@ have to create the missing HTML files
 */
 
 app.get('/videos', function(req, res) {
-	res.send(getHTML('Videos.html'))
+	res.send(getHTML('blog.html'))
 });
 
 app.get('/blog', function(req, res) {
