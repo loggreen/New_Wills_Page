@@ -1,86 +1,88 @@
 * {
-	font-family: 'Playfair Display', serif;
-	margin: 0px;
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
 }
 
-*:active, *:focus { 
-   outline:0 !important;
+*:active,
+*:focus {
+    outline: 0 !important;
 }
 
 button:focus {
-	outline: 0;
+    outline: 0;
 }
 
 h1 {
-	font-size: 26px;
-	font-style: italic;
-	font-weight: 600;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 600;
 }
 
 h5 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 17px;
-	color: #5c5b5e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #5c5b5e;
 }
 
 h4 {
-	font-size: 17px;
-	font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ::placeholder {
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-a, u {
+a,
+u {
     text-decoration: none !important;
 }
 
 .row {
-	margin: 0px;
+    margin: 0px;
 }
 
 .header {
-	height: 100px;
-	width: 100%;
-	background-color: #fff;
-	position: fixed;
-	z-index: 10;
-	top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    top: 0;
 }
 
 .container {
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
 }
 
 #link_text {
-	color: #00568b;
+    color: #00568b;
 }
 
 .dropdown-menu {
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
 }
 
 #dropdown_exit {
-	color: #00568b;
+    color: #00568b;
     float: right;
     padding-right: 10px;
     cursor: pointer;
 }
 
 .nav-item {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 
 .navbar {
-	height: 100px;
-	padding: 0px;
-	padding-left: 114px;
+    height: 100px;
+    padding: 0px;
+    padding-left: 114px;
     padding-right: 115px;
     position: fixed;
     width: 100%;
@@ -89,34 +91,34 @@ a, u {
 }
 
 .navbar:hover {
-	background-color: white;
+    background-color: white;
 }
 
 .navbar-brand {
-	padding: 0px;
-	margin-right: 0px;
+    padding: 0px;
+    margin-right: 0px;
 }
 
 #header_logo {
-	height: 100px;
+    height: 100px;
 }
 
-.header_button{
-	height: 25px;
-	margin-top: 34px;
+.header_button {
+    height: 25px;
+    margin-top: 34px;
 }
 
 .header_text {
-	color: #00568b;
-	font-size: 20px;
-	padding-top: 34px;
+    color: #00568b;
+    font-size: 20px;
+    padding-top: 34px;
 }
 
 .header_contact_info {
-	color: #fff;
-	width: 157px;
+    color: #fff;
+    width: 157px;
     float: right;
-	font-size: 20px;
+    font-size: 20px;
     margin-top: 8px;
     margin-right: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -126,17 +128,17 @@ a, u {
 }
 
 .hero_box {
-	background-image: url(Partners_BW.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 450px;
-	padding-top: 100px;
-	background-position-y: center;
+    background-image: url(Partners_BW.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    padding-top: 100px;
+    background-position-y: center;
 }
 
 .hero_text {
-	color: white;
+    color: white;
     opacity: .9;
     font-size: 46px;
     padding-top: 9%;
@@ -144,86 +146,86 @@ a, u {
 }
 
 .new_approach {
-	background-color: #00568b;
-	color: white;
-	text-align: center;
-	padding-bottom: 26px;
+    background-color: #00568b;
+    color: white;
+    text-align: center;
+    padding-bottom: 26px;
 }
 
 .new_approach_headline {
-	padding-top: 20px;
-	margin-bottom: 25px;
+    padding-top: 20px;
+    margin-bottom: 25px;
 }
 
 .new_approach_text {
-	text-align: justify;
-	padding-left: 35px;
-	font-size: 22px;
+    text-align: justify;
+    padding-left: 35px;
+    font-size: 22px;
 }
 
 .approach_items {
-	text-align: justify;
-	margin-bottom: 15px;
-	padding-right: 35px;
+    text-align: justify;
+    margin-bottom: 15px;
+    padding-right: 35px;
 }
 
 .attorney_box {
-	text-align: center;
+    text-align: center;
 }
 
 .your_attorneys_headline {
-	text-align: center;
-	padding-top: 52px;
-	margin-bottom: 62px;
-	color: #5c5b5e;
+    text-align: center;
+    padding-top: 52px;
+    margin-bottom: 62px;
+    color: #5c5b5e;
 }
 
 .attorney_bio {
-	text-align: justify;
-	padding-top: 25px;
-	padding-left: 58px;
-	padding-right: 58px;
+    text-align: justify;
+    padding-top: 25px;
+    padding-left: 58px;
+    padding-right: 58px;
 }
 
 .testimonial_columns {
-	text-align: center;
+    text-align: center;
 }
 
 .bio_video {
-	text-align: center;
-	height: 350px;
-	width: 566px;
+    text-align: center;
+    height: 350px;
+    width: 566px;
 }
 
 .testimonials_headline {
-	text-align: center;
-	padding-top: 20px;
-	margin-bottom: 25px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 25px;
 }
 
 .testimonial_video {
-	height: 193px;
-	width: 366px;
+    height: 193px;
+    width: 366px;
 }
 
 .testimonials {
-	background-color: #dedede;
+    background-color: #dedede;
 }
 
 .footer {
-	height: 100px;
-	width: 100%;
-	background-color: #00568b;
-	text-align: center;
+    height: 100px;
+    width: 100%;
+    background-color: #00568b;
+    text-align: center;
 }
 
 #footer_logo {
-	height: 100px;
-	width: 150px;
+    height: 100px;
+    width: 150px;
 }
 
 #footer_firm_name {
-	color: white;
+    color: white;
     padding-top: 2%;
 }
 
@@ -239,20 +241,23 @@ a, u {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 280px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
     color: #00568b;
-    padding: 6px 9px;				/*12px 16px;*/
+    padding: 6px 9px;
+    /*12px 16px;*/
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -265,135 +270,136 @@ a, u {
 }
 
 #event_flyer {
-	display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
 }
 
-@media only screen and (max-width: 768px) {
-
-#event_flyer {
-width: 98%;
-}
-
-.navbar {
-	height: 100px;
-	padding: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.navbar-brand {
-	padding-left: 11px;
-}
-
-#navbarNavDropdown {
-	position: absolute;
-	color: #00568b;  
-    margin-top: 107px;
-    z-index: 10;
-    background-color: rgba(255,255,255,0.96);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 62%;
-    margin-left: 59px;
-    padding-left: 10px;
-}
-
-#header_logo {
-	margin-left: -15px;
-}
-
-.dropdown-menu {
-	position: static;
-	float: left !important;
-	z-index: 100;
-}
-
-.header_contact_info {
-	margin-right: 2px;
-	color: #00568b;
-	font-family: 'Montserrat', sans-serif;
-	background-color: white;
-	padding-right: 10px;
-}
-
-.bio_video {
-	zoom: 60%;
-}
-
-.testimonial_video {
-	zoom: 92%;
-}
-
-.attorney_bio {
-	text-align: justify;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-
-#footer_firm_name {
-	text-align: center;
-}
-
-.footer {
-    height: 54px;
-}
-
-.hero_text {
-	color: white;
-    opacity: .9;
-    font-size: 46px;
-    padding-top: 22%;
-    text-align: center;
-    display: none;
-}
-
-.hero_box {
-	background-size: contain;
-}
-
-.new_approach {
-	margin-top: -85px;
-}
-
-.new_approach_text {
-	padding-left: 0px;
-}
-
-.approach_items_list {
-	padding-left: 33px;
-	margin-top: 13px;
-}
-
-.attorney_bio {
-	padding-top: -2px;
-	margin-bottom: 18px;
-}
-
 #blog-wrapper {
-	padding: 170px 75px;
+    padding: 170px 75px;
 }
 
 #blog-wrapper .video {
-	width: 880px;
-	height: 490px;
-	margin: 0 auto;
-	display: block;
+    width: 880px;
+    height: 490px;
+    margin: 0 auto;
+    display: block;
 }
 
 #blog-wrapper .post_title {
-	font-size: 22pt;
-	font-weight: bold;
-	margin-bottom: 22px;
+    font-size: 22pt;
+    font-weight: bold;
+    margin-bottom: 22px;
 }
 
 #blog-wrapper .video_run_time {
-	color: #aaa;
+    color: #aaa;
 }
 
+@media only screen and (max-width: 768px) {
+
+    #event_flyer {
+        width: 98%;
+    }
+
+    .navbar {
+        height: 100px;
+        padding: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .navbar-brand {
+        padding-left: 11px;
+    }
+
+    #navbarNavDropdown {
+        position: absolute;
+        color: #00568b;
+        margin-top: 107px;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.96);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        width: 62%;
+        margin-left: 59px;
+        padding-left: 10px;
+    }
+
+    #header_logo {
+        margin-left: -15px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        float: left !important;
+        z-index: 100;
+    }
+
+    .header_contact_info {
+        margin-right: 2px;
+        color: #00568b;
+        font-family: 'Montserrat', sans-serif;
+        background-color: white;
+        padding-right: 10px;
+    }
+
+    .bio_video {
+        zoom: 60%;
+    }
+
+    .testimonial_video {
+        zoom: 92%;
+    }
+
+    .attorney_bio {
+        text-align: justify;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    #footer_firm_name {
+        text-align: center;
+    }
+
+    .footer {
+        height: 54px;
+    }
+
+    .hero_text {
+        color: white;
+        opacity: .9;
+        font-size: 46px;
+        padding-top: 22%;
+        text-align: center;
+        display: none;
+    }
+
+    .hero_box {
+        background-size: contain;
+    }
+
+    .new_approach {
+        margin-top: -85px;
+    }
+
+    .new_approach_text {
+        padding-left: 0px;
+    }
+
+    .approach_items_list {
+        padding-left: 33px;
+        margin-top: 13px;
+    }
+
+    .attorney_bio {
+        padding-top: -2px;
+        margin-bottom: 18px;
+    }
+
+
+
 
 
 }
-
