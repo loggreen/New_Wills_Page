@@ -38,10 +38,10 @@ function get_blogs(start){
         success: function(data){
             for(var i = 0; i < data.length; i++){
                 $('#blog-wrapper').append(
-                    "<div class='vlog'><iframe class='video' height='202' src='" + data[i].Video_Code + "' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>"
-                    + "<h6 class='post_title' id='first_post_title'>" + data[i].Headline + "</h6>"
+                    "<div class='vlog'><h6 class='post_title' id='first_post_title'>" + data[i].Headline + "</h6>"
+                    + "<iframe class='video' height='202' src='" + data[i].Video_Code + "' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>"
                     + "<h6 class='video_run_time' id='first_video_run_time'>" + data[i].Post_Date + " (Length: " + data[i].Run_Time + ")</h6>"
-                    + "<p class='post_preview' id='first_post_preview'>" + data[i].Full_Text + "</p>"
+                    + "<p class='post_preview' id='first_post_preview'>" + data[i].Full_Text + "</p></div>"
                 );
             }
         }
