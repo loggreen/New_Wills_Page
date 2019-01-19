@@ -372,5 +372,28 @@ width: 98%;
 	margin-bottom: 18px;
 }
 
+#blog-wrapper {
+	padding: 170px 75px;
+}
+
+#blog-wrapper .video {
+	width: 880px;
+	height: 490px;
+	margin: 0 auto;
+	display: block;
+}
+
+#blog-wrapper .post_title {
+	font-size: 22pt;
+	font-weight: bold;
+	margin-bottom: 22px;
+}
+
+#blog-wrapper .video_run_time {
+	color: #aaa;
+}
+
+
+
 }
 
