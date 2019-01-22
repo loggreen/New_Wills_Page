@@ -180,6 +180,10 @@ a, u {
 	cursor: pointer;
 }
 
+.video_run_time:hover {
+	text-decoration: underline;
+}
+
 .post_preview:hover {
 	text-decoration: underline;
 	cursor: pointer;
