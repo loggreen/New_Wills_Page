@@ -125,7 +125,7 @@ app.get('/blogs/:start/:count', function(req,res){
 
 		console.log('error', err)
 		if(connection){
-			connection.query('SELECT * FROM final_blogs ORDER BY Blog_ID DESC LIMIT ' + count + ' OFFSET ' + start, function(error, result, field){
+			connection.query('SELECT * FROM final_blogs ORDER BY Blog_ID DESC LIMIT ? OFFSET ?', [start, count], function(error, result, fields){
 				console.log('/blog error', error);
 				connection.release();
 
