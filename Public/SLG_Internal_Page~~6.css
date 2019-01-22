@@ -647,6 +647,29 @@ a, u {
     color: #00568b;
 }
 
+.blog_title {
+	text-align: center;
+	color: #00568b;
+	font-size: 36px;
+	font-weight: 600;
+	font-family: 'Playfair Display', serif;
+}
+
+.blog_post_date {
+	text-align: center;
+	color: #00568b;
+	font-size: 26px;
+	font-weight: 600;
+	font-family: 'Playfair', serif;
+}
+
+.blog_text {
+	text-align: justify;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+    color: #5c5b5e;
+}
+
 @media only screen and (max-width: 768px) {
 
 
