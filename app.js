@@ -116,8 +116,8 @@ app.get('/Practice_Blog_Table/final_blogs', function(req,res){
 
 app.get('/blogs/:start/:count', function(req,res){
 
-	var start = req.params.start;
-	var count = req.params.count;
+	var start = parseInt(req.params.start);
+	var count = parseInt(req.params.count);
 
 	console.log("working", '/blogs/')
 
