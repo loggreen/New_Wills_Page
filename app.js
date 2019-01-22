@@ -119,14 +119,14 @@ app.get('/blogs/:start/:count', function(req,res){
 	var start = req.params.start;
 	var count = req.params.count;
 
-	console.log("working")
+	console.log("working", '/blogs/')
 
 	pool.getConnection(function(err, connection) {
 
-		console.log(err)
+		console.log('error', err)
 		if(connection){
 			connection.query('SELECT * FROM final_blogs ORDER BY Blog_ID DESC LIMIT ' + count + ' OFFSET ' + start, function(error, result, field){
-				
+				console.log('/blog error', error);
 				connection.release();
 
 				if(!err) {
@@ -137,7 +137,9 @@ app.get('/blogs/:start/:count', function(req,res){
 
 			res.send(result)
 
-			});
+			}).on('error', function(err) {
+            	console.log("[mysql error]",err);
+        	});;
 		}
 	});
 
