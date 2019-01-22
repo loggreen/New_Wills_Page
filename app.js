@@ -19,6 +19,16 @@ console.log(process.env.DB_USERNAME)
 console.log(process.env.DB_PASSWORD)
 console.log(process.env.DB_DATABASE)
 
+function requireHTTPS(req, res, next) {
+  // The 'x-forwarded-proto' check is for Heroku
+  if (!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV !== "development") {
+    return res.redirect('https://www.' + req.get('host') + req.url);
+  }
+  next();
+}
+
+app.use(requireHTTPS);
+
 var path = require('path');
 
 app.use(express.static(__dirname + '/Public', { index : false })); // set the static files location /public/img will be /img for users
