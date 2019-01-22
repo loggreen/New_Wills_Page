@@ -25,7 +25,7 @@ $(document).ready(function(){
 });
 
 function get_blogs(start){
-    var start = start || 0;
+    var start = start || 1;
 
     $.ajax({
         method: 'GET',
