@@ -280,22 +280,27 @@ u {
     padding: 170px 75px;
 }
 
-#blog-wrapper .video {
-    width: 880px;
-    height: 490px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
+.blog_title {
+    text-align: center;
+    color: #00568b;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
 }
 
-#blog-wrapper .post_title {
-    font-size: 22pt;
-    font-weight: bold;
+.blog_post_date {
+    text-align: center;
+    color: #00568b;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Playfair', serif;
 }
 
-#blog-wrapper .video_run_time {
-    color: #aaa;
-    margin-bottom: 22px;
+.blog_text {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #5c5b5e;
 }
 
 @media only screen and (max-width: 768px) {
