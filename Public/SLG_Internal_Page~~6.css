@@ -631,6 +631,18 @@ a, u {
     margin-bottom: 25px;
 }
 
+#first_post_title {
+	color: #00568b;
+}
+
+#first_video_run_time {
+	color: #00568b;
+}
+
+#first_post_preview {
+    color: #00568b;
+}
+
 @media only screen and (max-width: 768px) {
 
 
@@ -868,8 +880,6 @@ iframe {
 #blog-wrapper .video_run_time {
 	color: #aaa;
 }
-
-
 
 
 }
