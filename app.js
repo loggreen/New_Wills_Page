@@ -116,28 +116,31 @@ app.get('/Practice_Blog_Table/final_blogs', function(req,res){
 
 app.get('/blogs/:start/:count', function(req,res){
 
-	var start = req.params.start;
-	var count = req.params.count;
+	var start = parseInt(req.params.start);
+	var count = parseInt(req.params.count);
 
-	console.log("working")
+	console.log("working", '/blogs/')
 
 	pool.getConnection(function(err, connection) {
 
-		console.log(err)
+		console.log('error', err)
 		if(connection){
-			connection.query('SELECT * FROM final_blogs ORDER BY Blog_ID DESC LIMIT ' + count + ' OFFSET ' + start, function(error, result, field){
-				
+			connection.query('SELECT * FROM final_blogs ORDER BY Blog_ID DESC LIMIT ? OFFSET ?', [count, start], function(error, result, fields){
+				console.log('/blog error', error, result);
 				connection.release();
 
 				if(!err) {
 
-					res.json(result);
+					// res.json(result);
+					res.send(JSON.stringify(result));
 
 				}
 
-			res.send(result)
+			// res.send(result)
 
-			});
+			}).on('error', function(err) {
+            	console.log("[mysql error]",err);
+        	});;
 		}
 	});
 
