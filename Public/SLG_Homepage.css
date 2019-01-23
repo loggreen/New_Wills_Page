@@ -303,6 +303,10 @@ u {
     color: #5c5b5e;
 }
 
+.main_blog_video_box {
+    text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
 
     #event_flyer {
@@ -402,6 +406,10 @@ u {
     .attorney_bio {
         padding-top: -2px;
         margin-bottom: 18px;
+    }
+
+    iframe {
+        width: 100%;
     }
 
 

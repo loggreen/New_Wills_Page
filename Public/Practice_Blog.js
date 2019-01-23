@@ -39,7 +39,7 @@ function get_blogs(start){
             for(var i = 0; i < data.length; i++){
                 $('#blog-wrapper').append(
                     "<div class='vlog'><h6 class='blog_title'>" + data[i].Headline + "</h6>"
-                    + "<iframe class='video' height='202' src='" + data[i].Video_Code + "' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>"
+                    + "<div class='main_blog_video_box'><iframe class='main_blog_video' width='560' height='315' src='" + data[i].Video_Code + "' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>"
                     + "<h6 class='blog_post_date'>" + data[i].Post_Date + " (Length: " + data[i].Run_Time + ")</h6>"
                     + "<p class='blog_text'>" + data[i].Full_Text + "</p></div>"
                 );
