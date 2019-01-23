@@ -291,7 +291,7 @@ u {
 .blog_post_date {
     text-align: center;
     color: #00568b;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     font-family: 'Playfair', serif;
 }
@@ -301,6 +301,8 @@ u {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     color: #5c5b5e;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .main_blog_video_box {
@@ -409,7 +411,17 @@ u {
     }
 
     iframe {
-        width: 100%;
+        width: 97%;
+    }
+
+    #blog-wrapper {
+    padding: 0px;
+    padding-top: 116px;
+    }
+
+    .blog_text {
+    padding-left: 10px;
+    padding-right: 10px;
     }
 
 
