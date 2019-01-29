@@ -95,6 +95,9 @@ app.get('/practice-areas/power-of-attorney', function(req, res) {
 	res.send(getHTML('Power_of_Attorney.html'))
 });
 
+app.get('/practice-areas/special-needs-trusts', function(req, res) {
+	res.send(getHTML('SNT.html'))
+});
 
 app.get('/Practice_Blog_Table/final_blogs', function(req,res){
 
