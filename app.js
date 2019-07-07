@@ -95,6 +95,10 @@ app.get('/practice-areas/power-of-attorney', function(req, res) {
 	res.send(getHTML('Power_of_Attorney.html'))
 });
 
+app.get('/practice-areas/small-succession-affidavit', function(req, res) {
+	res.send(getHTML('Small_Succession_Affidavit.html'))
+});
+
 app.get('/practice-areas/special-needs-trusts', function(req, res) {
 	res.send(getHTML('SNT.html'))
 });
