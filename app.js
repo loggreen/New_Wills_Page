@@ -103,6 +103,10 @@ app.get('/practice-areas/special-needs-trusts', function(req, res) {
 	res.send(getHTML('SNT.html'))
 });
 
+app.get('/practice-areas/trusts', function(req, res) {
+	res.send(getHTML('Trusts.html'))
+});
+
 app.get('/Practice_Blog_Table/final_blogs', function(req,res){
 
 	console.log("working")
