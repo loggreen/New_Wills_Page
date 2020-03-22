@@ -111,6 +111,10 @@ app.get('/practice-areas/elder-abuse', function(req, res) {
 	res.send(getHTML('Elder_Abuse.html'))
 });
 
+app.get('/practice-areas/business-interruption-insurance', function(req, res) {
+	res.send(getHTML('BII.html'))
+});
+
 app.get('/Practice_Blog_Table/final_blogs', function(req,res){
 
 	console.log("working")
